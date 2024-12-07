@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="function.js"></script>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome back!</h1>
+    </div>
+    <h2>Login</h2>
+    <div class="wrapper">
+        <div class="box1">
+    <form onsubmit="return validation()">
+        <p>Username</p>
+        <input type="text" name="username" id="username" />
+        <span id="messageUser" style="color:red"></span>
+        <p>Password</p>
+        <input type="password" name="password" id="pass">
+        <input type="checkbox" onclick="showPassword()">Show Password<br>
+        <span id="messagePass" style="color:red"></span>
+        <div class="buttons">
+            <button type="submit" name="btnLogin" id="btnLogin">Login</button>
+        </div>
+    </form>
+        </div>
+    </div>
+</body>
+</html>

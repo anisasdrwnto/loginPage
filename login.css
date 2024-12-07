@@ -1,0 +1,114 @@
+/* Import Poppin font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body{
+        font-family: 'Poppins';
+        font-size: 20px;
+        color: #fff;
+        background-image: url("background.jpg");
+        background-size: cover;
+    }
+
+    h2{
+       text-align: center;
+       font-size: 30px;
+       margin-top: 10px; 
+       margin-bottom: 10px; 
+       padding: 0;
+    }
+
+    
+
+   .container{
+        margin: 20px;
+    }
+    
+    .container h1:nth-child(1) {
+        background-color: #fff;
+        font-size: 50px;
+        width: 50%;  
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        overflow: hidden;
+        white-space: nowrap; 
+        animation: shring-animation 2.2s steps(40,end) 2s forwards, blink .5s step-end infinite alternate;
+    }
+
+    @keyframes shring-animation {
+        0% {
+            background-position: 0 0;
+            opacity: 0;
+            width: 0;
+        }
+        1% {
+            background-position: 0 0;
+            opacity: 1;
+            border-right: 0.5px solid white;
+        } 
+        50% {
+            background-position: 50% 0;
+            opacity: 1;
+            border-right: 0.5px solid white;
+        }
+        
+    }
+
+    @keyframes blink {
+        20% {
+            border-color: transparent;
+        }
+        50% {
+            border-color: white;
+        }
+    }
+
+    
+    .box1{
+        margin: 0 auto;
+        padding: 50px;
+        background: linear-gradient(to bottom right, #0077b6, white);
+        color: #fff;
+        opacity: 0.5;
+        width: 500px;
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    p{
+        margin: 5px;
+        margin-bottom: 0.5em;
+    }
+
+    #username{
+        width: 500px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 18px;
+        grid-template-columns: 0;
+        background: linear-gradient(to bottom right, silver, white);
+        opacity: 0.5em;
+        border: 0;
+    }
+
+    #pass{
+        width: 500px;
+        height: 35px;
+        border-radius: 20px;
+        font-size: 18px;
+        grid-template-columns: 0;
+        background: linear-gradient(to bottom right, silver, white);
+        opacity: 0.5em;
+        border: 0;
+    }
+
+    #btnLogin{
+        width: 500px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 18px;
+        grid-template-columns:0;
+        background-color: #70e000;
+        opacity: 0.5em;
+        border: 0;
+        margin-top: 20px;
+    }
